@@ -1,46 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+ <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mi Primer Website</title>
+  <title>Rolandito</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-  
-  <div class="container-nav">
-   <nav class="navbar">
-    <a href="index.html" class="brand">Mi página web</a>
-    <ul class="nav-links">
-     <li><a href="index.html">Inicio</a></li>
-     <li><a href="Acerca de.html">Acerca de</a></li>
-     <li><a href="services.html">Servicios</a></li>
-     <li><a href="contact.html">Contacto</a></li>
-     <li><a href="#">FAQ</a></li>
-    </ul>
-   </nav>
-   <button class="button-menu-toggle">Menu</button>
-  </div>
-
+ </head>
  
+<body>
+      
+ <header class="container-nav">
+  <div>
+    <nav class="navbar" role="navigation">
+      <a href="index.html" class="brand">Mi página web</a>
+      <ul class="nav-links">
+       <li><a href="index.html">Inicio</a></li>
+       <li><a href="Acerca de.html">Acerca de</a></li>
+       <li><a href="services.html">Servicios</a></li>
+       <li><a href="contact.html">Contacto</a></li>
+       <li><a href="#">FAQ</a></li>
+      </ul>
+    </nav>
+    <button class="button-menu-toggle">Menu</button>
+   </header>
 
+  <main>
     <div class="container">    
       <h1>Atencion!! </h1>
-      <div class="row">
-        <div class="colum">   
+      <section>
+        <h2>Presentacion</h2>
         <p>Esta es una pagina web del Gobierno de Villa LaChagar</p>
         <p>Invitamos a todos los deformes del mundo que se vengan a instalar a nuestra tierra y descubran las bondades del lugar.</p>
-        <p>Pueden venir con amigos pero asegurensé de que sean al menos enanos.</p>
-    </div>
-    </div class="colum"> 
-     <h2>Bienvenidos serán aquellos que hayan sido elegidos por el Señor para ser distintos</h2>
-    </div>
-    <button onclick="showAlert()">¡Haz click en mi!</button>
-    <form id="myForm">
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" required>
-      <button type="submit">Enviar</button>
-      </form>
-    <script src="script.js"></script>   
-</body>
-<h3>La Villa se reserva el derecho de admisión</h3>
+      </section>
+      <section>
+        <h2>Lo que se viene...</h2>
+        <p>
+          Pueden venir con amigos pero asegurensé de que sean al menos enanos.
+        </p>
+      </section>
+      <section>
+        <h3>Bienvenidos serán aquellos que hayan sido elegidos por el Señor para ser distintos</h3>
+      </section>
+       </div>
+
+  <div class="video-container">
+    <iframe width="400" height="200" src="https://www.youtube.com/embed/uBKRQsR7CFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <video width="400" height="200" src="londres.mp4" controls></video>
+  </div>  
+  
+  <form id="myForm">
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+    <button type="submit">Enviar</button>
+    </form>
+
+  </main>
+
+  <footer>
+    <p>Desarrollado por Arnaldo Suarseneguer</p>
+    <button onClick="showAlert()" aria-label="Dispara una alerta de saludo">¡Por que tocas este boton, botón!</button>
+  </footer>
+  
+    <script src="script.js"></script>
+  </body>
 </html>
